@@ -4,6 +4,14 @@ return {
   { "prettier/vim-prettier", build = "yarn install --frozen-lockfile" },
   { "jose-elias-alvarez/typescript.nvim" },
   { "jwalton512/vim-blade" },
+  { "akinsho/toggleterm.nvim" },
+  {
+    "nvim-tree/nvim-tree.lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("nvim-tree").setup()
+    end,
+  }
 
   -- PLugin untuk C++
   { "p00f/clangd_extensions.nvim" },
@@ -18,6 +26,11 @@ return {
           php = "php %",
           python = "python3 %",
         },
+      })
+      require("toggleterm").setup({
+          size = 12,
+          open_maping = [[<C-/>]],
+          direction = "horizontal",
       })
     end,
   },
