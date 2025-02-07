@@ -1,11 +1,11 @@
 return {
   {
-    "rose-pine/neovim",
-    name = "rose-pine",
+    "Everblush/nvim",
+    name = "everblush",
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd("colorscheme rose-pine")
+      vim.cmd("colorscheme everblush")
     end,
   },
 }
