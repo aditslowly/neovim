@@ -23,7 +23,7 @@ map("n", "<Leader>r", ":RunCode<CR>", opts) -- Jalankan kode
 
 -- Switch file or workspace
 map("n", "<S-l>", ":BufferLineCycleNext<CR>", { desc = "Next Tab", noremap = true, silent = true })
-map("n", "<S-h>", ":BufferLineCyclePrev<CR>", { desc = "Previous Tab", noremap = true. silent = true })
+map("n", "<S-h>", ":BufferLineCyclePrev<CR>", { desc = "Previous Tab", noremap = true, silent = true })
 
 -- Toggle workspace
 map("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
