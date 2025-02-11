@@ -11,7 +11,7 @@ return {
     config = function()
       require("nvim-tree").setup()
     end,
-  }
+  },
 
   -- PLugin untuk C++
   { "p00f/clangd_extensions.nvim" },
